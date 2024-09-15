@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Navigation Bar</title>
+
+    <style>
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        nav a[aria-current="page"] {
+            font-weight: bold;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#home" aria-current="page">Home</a></li>
+            <li><a href="#about" aria-label="About Section">About</a></li>
+            <li><a href="#services" aria-label="Services Section">Services</a></li>
+            <li><a href="#contact" aria-label="Contact Section">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>Welcome to the Home Page</h1>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Learn more about our mission and values.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>Discover the services we offer to help you.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Reach out to us for more information.</p>
+    </section>
+
+</body>
+</html>
